@@ -24,9 +24,12 @@ jobs:
       nombres: "Mayra Joselyn "
       apellidos: "Yaranga Guevara"
       edad: "23"
+      version_proyecto: "3.0"
 
       user: ${{secrets.USER}}
       password: ${{secrets.PASSWORD}} 
+
+      
       
 
     # Steps represent a sequence of tasks that will be executed as part of the job
