@@ -57,3 +57,7 @@ jobs:
         run: |
           echo "user: ${{ secrets.user }}"
           echo "password: ${{ secrets.password }}"
+      # Creacion de variables abiertas
+      - name: variables abiertas
+        run: |
+          echo "Versión del proyecto: $version_proyecto"
