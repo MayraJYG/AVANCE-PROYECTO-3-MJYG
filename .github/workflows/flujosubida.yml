@@ -53,7 +53,7 @@ jobs:
       - name: datos generales
         run: echo "carrera de ingeniería de sistemas"
       #impresion de variables  secretas
-      - name: impresion de variblaes secretas
+      - name: variables de entorno secretas
         run: |
-            echo " El user es: ${{env.User}}"
-            echo "La contraseña es:${{env.Password}}"
+          echo "user: ${{ secrets.user }}"
+          echo "password: ${{ secrets.password }}"
