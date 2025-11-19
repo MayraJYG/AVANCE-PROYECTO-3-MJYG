@@ -25,6 +25,8 @@ jobs:
       apellidos: "Yaranga Guevara"
       edad: "23"
       version_proyecto: "3.0"
+      seccion_clase: "35806"
+      nombre_docente: "Manrique Tejada,Gonzalo Alonso"
 
       user: ${{secrets.USER}}
       password: ${{secrets.PASSWORD}} 
@@ -60,7 +62,13 @@ jobs:
         run: |
           echo "user: ${{ secrets.user }}"
           echo "password: ${{ secrets.password }}"
-      # Creacion de variables abiertas
+      #  Creacion de variables abiertas
       - name: variables abiertas
         run: |
           echo "Versión del proyecto: $version_proyecto"
+      #  MI 4TO STEP Creacion de variables abiertas diferentes
+      - name: variables abiertas diferentes
+        run: |
+          echo "Seccion de clase: $seccion_clase"
+          echo "Nombre del docente : $nombre_docente"
+
