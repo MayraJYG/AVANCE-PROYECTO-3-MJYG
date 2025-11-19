@@ -40,9 +40,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      # MI PRIMER STEPS
+      # MI PRIMER STEP
       - name: presentación
         run: |
           echo "Nombres: $nombres"
           echo "Apellidos: $apellidos"
           echo "Edad: $edad"
+       # MI SEGUNDO STEP  
+      - name: datos generales
+        run: echo "carrera de ingeniería de sistemas"
