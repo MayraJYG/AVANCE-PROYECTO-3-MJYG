@@ -24,6 +24,9 @@ jobs:
       nombres: "Mayra Joselyn "
       apellidos: "Yaranga Guevara"
       edad: "23"
+
+      user: ${{secrets.USER}}
+      password: ${{secrets.PASSWORD}} 
       
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -49,3 +52,8 @@ jobs:
        # MI SEGUNDO STEP  
       - name: datos generales
         run: echo "carrera de ingeniería de sistemas"
+      #impresion de variables  secretas
+      - name: impresion de variblaes secretas
+        run: |
+            echo " El user es: ${{env.User}}"
+            echo "La contraseña es:${{env.Password}}"
