@@ -52,7 +52,7 @@ jobs:
        # MI SEGUNDO STEP  
       - name: datos generales
         run: echo "carrera de ingeniería de sistemas"
-      #impresion de variables  secretas
+      # MI TERCER STEP impresion de variables  secretas
       - name: variables de entorno secretas
         run: |
           echo "user: ${{ secrets.user }}"
